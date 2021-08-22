@@ -1,0 +1,109 @@
+.Efecto_Parallax {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-image: url('../img/Parallax_Contacto.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Efecto_Parallax div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+    width: 80%;
+    height: 400px;
+    color: white;
+}
+
+.Comunicate{
+    display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Comunicate div{
+    width: 33%;
+    height: 500px;
+}
+
+.Comunicate div section{
+    height: 15%;
+    margin-top: 1px;
+    height: 80px;
+    font-family: "Be Vietnam", sans-serif;;
+    font-size: 12px;
+   
+}
+
+.Comunicate div i{
+    color: rgb(88, 25, 147);
+    font-size: 25px;
+}
+
+
+.Comunicate div section h1{
+    float: left;
+    font-size: 16px;
+    margin-left: 10px;
+    /*margin-top: 4px;*/
+}
+
+.Comunicate div form{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    left: 1%;
+    font-size: 15px;
+}
+
+.Comunicate h5{
+    text-align: justify;
+}
+
+.Comunicate form table{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.Comunicate form .Nombre input , .Comunicate form .Nombre label{
+    
+    width: 90%;
+}
+
+.Comunicate form table .Mensaje input {
+
+    width: 190%;
+}
+
+
+.Comunicate form table .Mensaje textarea {
+   
+    width: 192%;
+    height: 110px;
+}
+
+.Comunicate form label{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.Comunicate button{
+    background-color: rgb(88, 25, 147);
+    color: white;
+}
+
+button{
+    outline: none;
+}

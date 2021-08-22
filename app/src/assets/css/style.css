@@ -1,0 +1,640 @@
+
+#app{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/*----------*/
+
+.btn-wsp{
+    position:fixed;
+    text-align: center;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp i{
+    position: relative;
+    top: -3px;
+}
+
+.btn-wsp:hover{
+    background: #20ba5a;
+    color: black;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+    }
+}
+
+
+
+/*----------*/
+.Div-Principal {
+    position: relative;
+    overflow: hidden;
+    /* height: 3480px;*/
+}
+
+.header-1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    justify-self: center;
+    align-content: center;
+    height: 60px;
+    background-color: rgb(88, 25, 147) !important;
+}
+
+.header-1 form input {
+    position: relative;
+    width: 110%;
+}
+
+.header-1 .P-bienvenida {
+    position: relative;
+    width: 40%;
+    left: -3%;
+}
+
+.header-1 div p {
+    font-size: 1.5vw;
+    color: white !important;
+}
+
+.header-1 div i {
+    font-size: 1.9vw;
+}
+
+.header-1 div {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 33%;
+}
+
+
+.header-1 .form {
+    position: relative;
+    width: 100%;
+}
+
+.header-1 .busqueda {
+    position: relative;
+    outline: none;
+    background-color: rgb(75, 19, 128);
+    border: 1px solid rgb(75, 19, 128);
+}
+
+.header-1 .busqueda::placeholder {
+    color: white !important;
+}
+
+
+.header-1 form i {
+    position: relative;
+    font-size: 1.5vw;
+    left: -15%;
+    top: 7px;
+}
+
+
+.header-1 i {
+    position: relative;
+    padding-left: 1.2vw;
+    color: white !important;
+    cursor: pointer;
+}
+
+.navbar {
+    position: relaive;
+    width: 100%;
+    height: 90px;
+    background-color: white !important;
+}
+
+.navbar .Logo {
+    position: relative;
+    padding-left: -10px;
+    width: 14%;
+    z-index: 50;
+}
+
+nav .Logo img {
+    position: relative;
+    left: 50%;
+    height: 50px;
+}
+
+
+.navbar div,
+.navbar ul {
+    position: relative;
+    background-color: rgb(255, 255, 255) !important;
+    z-index: 10;
+}
+
+.navbar ul li {
+    position: relative;
+    font-size: 1.2vw;
+    margin-left: 15px;
+
+}
+
+.slider {
+    position: relative;
+    left: 1px;
+}
+
+.slider video {
+    position: relative;
+    width: 100%;
+    left: -1px;
+}
+
+/*------------------------------------*/
+
+
+.afiliados {
+    margin-bottom: 320px;
+}
+
+.afiliados .row {
+    /**/
+}
+
+.afiliados .row .card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.afiliados .row .card div {
+    width: 53%;
+    color: white;
+}
+
+.afiliados .row .card div img {
+    width: 100%;
+}
+
+
+.Icon {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    width: 92%;
+    top: -280px;
+
+}
+
+.Icon div {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+    width: 28%;
+    overflow: hidden;
+
+}
+
+.Icon h4 {
+    position: relative;
+    font-size: 1.9vw;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.Icon p {
+    font-size: 1vw;
+    margin-top: 10px;
+    left: 10px;
+}
+
+.Icon i {
+    font-size: 60px;
+    color: rgb(88, 25, 147);
+    margin-left: 15px;
+}
+
+
+.Paginacion {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: -240px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.Paginacion h1 {
+    position: relative;
+    border-bottom: 5px solid black;
+    width: 50%;
+    left: 24%;
+}
+
+.Paginacion .btn-afiliados {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(88, 25, 147);
+    padding: 10px;
+    margin-top: 70px;
+
+}
+
+
+.Paginacion .btn-afiliados i {
+    position: relative;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.nav-paginacion {
+    position: relative;
+    text-align: left;
+ 
+    width: 100%;
+    height: 50px;
+
+}
+
+.nav-paginacion li a {
+    color: black;
+}
+
+.img-efect {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    /*  height: 370px;*/
+}
+
+.img-efect .img-div {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 270px;
+    cursor: pointer;
+    height: 360px;
+    top: -13px;
+}
+
+
+#img-1 {
+    background-image: url('../img/img-1.JPG');
+    width: 100%;
+    height: 92%;
+
+}
+
+#img-1:hover {
+    background-image: url('../img/img-11.JPG');
+}
+
+#img-2 {
+    background-image: url('../img/img-2.JPG');
+    width: 100%;
+    height: 92%;
+}
+
+#img-2:hover {
+    background-image: url('../img/img-22.JPG');
+}
+
+#img-3 {
+    background-image: url('../img/img-3.JPG');
+    width: 100%;
+    height: 92%;
+}
+
+#img-3:hover {
+    background-image: url('../img/img-33.JPG');
+}
+
+#img-4 {
+    background-image: url('../img/img-4.JPG');
+    width: 100%;
+    height: 92%;
+}
+
+#img-4:hover {
+    background-image: url('../img/img-44.JPG');
+}
+
+
+
+.card-info {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    top: -40px;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-info a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-------EFECTO PARALLAX*/
+
+.Principal {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Efecto_Parallax {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-image: url('../img/parallax.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Efecto_Parallax div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+    background-color: transparent;
+    width: 80%;
+    height: 400px;
+    color: white;
+}
+
+.Efecto_Parallax div h1 {
+    position: relative;
+    width: 74%;
+    font-size: 4vw;
+    background-color: rgb(0, 0, 0, 0.5);
+
+
+}
+
+.Efecto_Parallax div h2 {
+    width: 33%;
+    font-size: 3vw;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+.Efecto_Parallax div p {
+    width: 30%;
+    font-size: 1.2vw;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+/*-------EFECTO PARALLAX*/
+
+.info-2 {
+    position: relative;
+    height: 13%;
+
+}
+
+.info-2 .card-body h5 {
+    text-align: center;
+    font-size: 1.2vw;
+    color: black !important;
+    margin-bottom: 30px;
+}
+
+.info-2 p {
+    position: relative;
+    text-align: justify;
+    color: black !important;
+    font-size: 1.1vw;
+    width: 100%;
+}
+
+
+.card {
+    box-shadow: 0 0 7px 1px silver;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(88, 25, 147);
+    width: 100%;
+
+}
+
+footer div {
+    width: 33%;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+footer .img_logo {
+    text-align: right;
+}
+
+footer .img_logo img {
+    width: 65%;
+    height: 250px;
+}
+
+footer .info_footer {
+    text-align: center;
+    height: 50%;
+
+}
+
+footer .info_footer h5 {
+    color: white !important;
+    font-size: 17px;
+}
+
+footer .info_footer h6 {
+    color: white !important;
+    font-size: 15px;
+}
+
+footer .info_footer img {
+    /*width: 80%;
+    height: 300px;*/
+}
+
+footer .info_footer .info {
+    display: flex;
+    justify-content: center;
+    width: 93%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 90%;
+}
+
+footer .info_footer .info h5 {
+    position: relative;
+    top: -10px;
+}
+
+footer .info_footer .info h6 {
+    position: relative;
+    top: -10px;
+}
+
+footer .info_footer .info div {
+    width: 46%;
+    font-size: 15px;
+    color: white !important;
+    height: 50%;
+    margin-bottom: 40px;
+}
+
+footer .img-london {
+    position: relative;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 10px;
+
+}
+
+footer .img-london div {
+    position: relative;
+    text-align: center;
+    background-color: white !important;
+    border-radius: 10px;
+    height: 300px;
+    width: 70%;
+    font-size: 15px;
+
+}
+
+footer .img-london div a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 720px) {
+
+    .header-1 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        width: 100%;
+    }
+
+    .header-1 p {
+        display: none;
+    }
+
+    .header-1 div i {
+        font-size: 3.5vw;
+        margin-bottom: 15px;
+    }
+
+    .header-1 .search {
+        position: relative;
+        width: 90%;
+
+    }
+
+    .header-1 .search i {
+        position: relative;
+        padding-left: 25px;
+
+    }
+
+    nav .Logo img {
+        left: 10%;
+    }
+
+
+
+
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(88, 25, 147);
+        width: 100%;
+
+    }
+
+    footer div {
+        width: 490px;
+        height: 355px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+}
