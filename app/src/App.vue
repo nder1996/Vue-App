@@ -67,54 +67,7 @@
                 </h4>
             </div>
         </div>
-<!--
-        <div class="Paginacion container">
-            <br> <br> <br>
-            <h1>Últimos Afiliados</h1>
-            <br> <br>
-            <div class="img-efect container">
-                <div class="img-div">
-                    <div id="img-1">
-                    </div>
-                    <div>
-                        <p>Agentes Inmobiliarios</p>
-                    </div>
-                </div>
-                <div class="img-div">
-                    <div id="img-2">
-                    </div>
-                    <div>
-                        <p>Nelly Carrillo</p>
-                    </div>
-                </div>
-                <div class="img-div">
-                    <div id="img-3">
-                    </div>
-                    <div>
-                        <p>Premium Rent a Car</p>
-                    </div>
-                </div>
-                <div class="img-div">
-                    <div id="img-4">
-                    </div>
-                    <div>
-                        <p>Maria Teresa López Psicoterapeuta</p>
-                    </div>
-                </div>
-                <nav class="nav-paginacion" aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
-                <br>
-                <a href="" class="btn-afiliados"><i class="fas fa-search-plus"></i>Ver todos los afiliados</a>
-            </div>
-        </div>
-    -->
+        <br>
     <Pagination></Pagination>
         <Footer></Footer>
     </div>
@@ -155,7 +108,7 @@ export default {
 }
 
 .afiliados {
-    margin-bottom: 320px;
+    margin-bottom: 10px;
 }
 
 .afiliados .row {
@@ -182,13 +135,14 @@ export default {
 }
 
 .Icon {
+    border:5px solid red;
     position: relative;
     justify-content: center;
     display: flex;
     flex-direction: wrap;
     flex-wrap: wrap;
     width: 92%;
-    top: -280px;
+   /* top: -280px;*/
 
 }
 
