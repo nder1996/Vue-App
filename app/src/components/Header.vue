@@ -12,12 +12,15 @@
                 <i class="fas fa-search"></i>
             </form>
         </b-container>
-        <b-container>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-whatsapp"></i>
-        </b-container>
+   
+
+    <b-container>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
     </b-container>
+  
+   </b-container>
 </template>
 <script type="text/javascript">
 export default {

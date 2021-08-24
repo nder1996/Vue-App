@@ -5,18 +5,134 @@
         <div class="slider container-expand-lg">
             <video src="src/assets/video/Centro.Virtual.mp4" type="video/mp4" frameborder="0" allowfullscreen autoplay loop muted></video>
         </div>
+        <br>
+        <div class="afiliados container-fluid">
+            <div class="row">
+                <div class="Tarjeta col-sm-6">
+                    <div class="card" style="background-color:rgb(101, 18, 150); color:black">
+                        <div class="card-body">
+                            <br>
+                            <h3 class="card-title">282 Afiliados</h3>
+                            <br>
+                            <p class="card-text">Conoce todas las empresas afiliadas</p>
+                            <br> <br>
+                            <a href="#" class="btn btn-primary bg-light">¡Click aquí!</a>
+                        </div>
+                        <div>
+                            <img src="/src/assets/img/Afiliado.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="Tarjeta col-sm-6">
+                    <div class="card" style="background-color:rgb(255, 178, 0); color:black">
+                        <div class="card-body">
+                            <br>
+                            <h3 class="card-title">282 Afiliados</h3>
+                            <br>
+                            <p class="card-text">Conoce todas las empresas afiliadas</p>
+                            <br> <br>
+                            <a href="#" class="btn btn-primary bg-light">¡Click aquí!</a>
+                        </div>
+                        <div>
+                            <img src="/src/assets/img/Lampara.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Icon container-expand-lg">
+            <div><i class="fas fa-users"></i>
+                <br>
+                <h4>
+                    Reconocimiento
+                    <br>
+                    <p>¡Date a conocer a más empresas!</p>
+                </h4>
+            </div>
+            <div>
+                <i class="fab fa-google"></i>
+                <br>
+                <h4>
+                    Posicionamiento
+                    <br>
+                    <p>¡Aparece en los primeros resultados de Google!</p>
+                </h4>
+            </div>
+            <div><i class="fas fa-handshake"></i>
+                <br>
+                <h4>
+                    Negocios directos
+                    <br>
+                    <p>Ofrece y obtén descuentos sólo por ser afiliado</p>
+                </h4>
+            </div>
+        </div>
+<!--
+        <div class="Paginacion container">
+            <br> <br> <br>
+            <h1>Últimos Afiliados</h1>
+            <br> <br>
+            <div class="img-efect container">
+                <div class="img-div">
+                    <div id="img-1">
+                    </div>
+                    <div>
+                        <p>Agentes Inmobiliarios</p>
+                    </div>
+                </div>
+                <div class="img-div">
+                    <div id="img-2">
+                    </div>
+                    <div>
+                        <p>Nelly Carrillo</p>
+                    </div>
+                </div>
+                <div class="img-div">
+                    <div id="img-3">
+                    </div>
+                    <div>
+                        <p>Premium Rent a Car</p>
+                    </div>
+                </div>
+                <div class="img-div">
+                    <div id="img-4">
+                    </div>
+                    <div>
+                        <p>Maria Teresa López Psicoterapeuta</p>
+                    </div>
+                </div>
+                <nav class="nav-paginacion" aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+                <br>
+                <a href="" class="btn-afiliados"><i class="fas fa-search-plus"></i>Ver todos los afiliados</a>
+            </div>
+        </div>
+    -->
+    <Pagination></Pagination>
+        <Footer></Footer>
     </div>
 </template>
 <script>
 import Header from './components/Header.vue';
 import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
+import Pagination from './components/Pagination.vue';
 
 
 export default {
     name: 'app',
     components: {
         Header,
-        Navbar
+        Navbar,
+        Footer,
+        Pagination
     }
 }
 </script>
@@ -36,5 +152,75 @@ export default {
     position: relative;
     width: 100%;
     left: -1px;
+}
+
+.afiliados {
+    margin-bottom: 320px;
+}
+
+.afiliados .row {
+    /**/
+}
+
+.afiliados .row .card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.afiliados .row .card div {
+    width: 53%;
+    color: white;
+}
+
+.afiliados .row .card div img {
+    width: 100%;
+}
+
+.card-body a {
+    color: black;
+}
+
+.Icon {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    width: 92%;
+    top: -280px;
+
+}
+
+.Icon div {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+    width: 28%;
+    overflow: hidden;
+
+}
+
+.Icon h4 {
+    position: relative;
+    font-size: 1.9vw;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.Icon p {
+    font-size: 1vw;
+    margin-top: 10px;
+    left: 10px;
+}
+
+.Icon i {
+    font-size: 60px;
+    color: rgb(88, 25, 147);
+    margin-left: 15px;
 }
 </style>
