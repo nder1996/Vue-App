@@ -42,13 +42,15 @@ footer {
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: rgb(88, 25, 147);
     width: 100%;
 
 }
 
 footer div {
-    width: 33%;
+    width: 30%;
     overflow: hidden;
     margin-left: 15px;
     margin-top: 30px;

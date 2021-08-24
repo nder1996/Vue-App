@@ -4,7 +4,8 @@
         <p id="linea-p"></p>
         <b-row class="Marco">
             <b-col cols="12" sm="2" class="my-1" :key="index" v-for="(item, index) in paginatedItems">
-                <img :src="item.url" alt="">
+                <div :class="{[`img_${item.id}`]: true}">
+                </div>
                 <p class="card-text">{{item.body}}</p>
             </b-col>
         </b-row>
@@ -18,34 +19,42 @@
 <script>
 console.log("ola mundo");
 const items = [{
+        id: "1",
         body: "Agentes Inmobiliarios",
         url: "src/assets/img/img-1.jpg"
     },
     {
+        id: "2",
         body: "Nelly Carrillo",
         url: "src/assets/img/img-2.jpg"
     },
     {
+        id: "3",
         body: "Premium Rent a Car",
         url: "src/assets/img/img-3.jpg"
     },
     {
+        id: "4",
         body: "Maria Teresa López Psicoterapeuta",
         url: "src/assets/img/img-4.jpg"
     },
     {
+        id: "5",
         body: "Grupo Integral Consultor",
         url: "src/assets/img/img-5.jpg"
     },
     {
+        id: "6",
         body: "Lunazul Virtual Shop",
         url: "src/assets/img/img-6.jpg"
     },
     {
+        id: "7",
         body: "Coworking en Pereira",
         url: "src/assets/img/img-7.jpg"
     },
     {
+        id: "8",
         body: "OCLLS",
         url: "src/assets/img/img-8.jpg"
     }
@@ -82,6 +91,104 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.img_1 {
+    background-image: url('../assets/img/img-1.jpg');
+   
+}
+
+.img_1:hover{
+ 
+    background-image: url('../assets/img/img-11.jpg');
+ 
+}
+
+
+.img_2 {
+   
+    background-image: url('../assets/img/img-2.jpg');
+  
+}
+
+.img_2:hover{
+    
+    background-image: url('../assets/img/img-22.jpg');
+  
+}
+
+.img_3 {
+    
+    background-image: url('../assets/img/img-3.jpg');
+
+}
+
+.img_3:hover{
+ 
+    background-image: url('../assets/img/img-33.jpg');
+   
+}
+
+.img_4 {
+   
+    background-image: url('../assets/img/img-4.jpg');
+ 
+}
+
+.img_4:hover{
+ 
+    background-image: url('../assets/img/img-44.jpg');
+ 
+}
+
+.img_5 {
+   
+    background-image: url('../assets/img/img-5.jpg');
+   
+}
+
+.img_5:hover{
+ 
+    background-image: url('../assets/img/img-55.jpg');
+   
+}
+
+
+.img_6 {
+   
+    background-image: url('../assets/img/img-6.jpg');
+   
+}
+
+.img_6:hover{
+
+    background-image: url('../assets/img/img-66.jpg');
+   
+}
+
+.img_7 {
+   
+    background-image: url('../assets/img/img-7.jpg');
+   
+}
+
+.img_7:hover{
+   
+    background-image: url('../assets/img/img-77.jpg');
+    
+}
+
+.img_8 {
+   
+    background-image: url('../assets/img/img-8.jpg');
+  
+}
+
+.img_8:hover{
+   
+    background-image: url('../assets/img/img-88.jpg');
+
+}
+
 .P-Letra {
     text-align: center;
 }
@@ -101,13 +208,13 @@ export default {
 
 .my-1 {
     width: 290px;
-
     margin-left: 15px;
 }
 
 
-.my-1 img {
-    width: 270px;
+.my-1 div {
+  width: 265px;
+  height:267px;
 }
 
 #Barra-P {

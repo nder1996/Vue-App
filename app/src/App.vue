@@ -135,7 +135,6 @@ export default {
 }
 
 .Icon {
-    border:5px solid red;
     position: relative;
     justify-content: center;
     display: flex;
