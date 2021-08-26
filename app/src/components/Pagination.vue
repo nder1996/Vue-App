@@ -204,15 +204,18 @@ export default {
 .Marco {
     display: flex;
     justify-content: left;
+    margin-bottom: 25px;
 }
 
 .my-1 {
+  text-align: center;
     width: 290px;
     margin-left: 15px;
 }
 
 
 .my-1 div {
+  text-align: center;
   width: 265px;
   height:267px;
 }

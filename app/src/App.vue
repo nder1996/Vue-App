@@ -68,7 +68,19 @@
             </div>
         </div>
         <br>
-    <Pagination></Pagination>
+        <Pagination></Pagination>
+        <br> <br>
+        <div class="Principal">
+            <div class="Efecto_Parallax">
+                <div>
+                    <h1>¡Aprovecha esta oportunidad!</h1>
+                    <h2>Solicita afiliación</h2> <br> <br> <br> <br>
+                    <p>Clic aquí para afiliarse ahora</p>
+                </div>
+            </div>
+        </div>
+   
+        <Pagination_1></Pagination_1>
         <Footer></Footer>
     </div>
 </template>
@@ -77,7 +89,7 @@ import Header from './components/Header.vue';
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
 import Pagination from './components/Pagination.vue';
-
+import Pagination_1 from './components/Pagination_1.vue';
 
 export default {
     name: 'app',
@@ -85,7 +97,8 @@ export default {
         Header,
         Navbar,
         Footer,
-        Pagination
+        Pagination,
+        Pagination_1
     }
 }
 </script>
@@ -141,7 +154,7 @@ export default {
     flex-direction: wrap;
     flex-wrap: wrap;
     width: 92%;
-   /* top: -280px;*/
+    /* top: -280px;*/
 
 }
 
@@ -176,4 +189,123 @@ export default {
     color: rgb(88, 25, 147);
     margin-left: 15px;
 }
+
+
+
+.Principal {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Efecto_Parallax {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-image: url('assets/img/parallax.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Efecto_Parallax div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+    background-color: transparent;
+    width: 80%;
+    height: 400px;
+    color: white;
+}
+
+.Efecto_Parallax div h1 {
+    position: relative;
+    width: 74%;
+    font-size: 4vw;
+    /*background-color: rgb(0, 0, 0, 0.5);*/
+}
+
+.Efecto_Parallax div h2 {
+    width: 33%;
+    font-size: 3vw;
+    /* background-color: rgb(0, 0, 0, 0.5);*/
+    margin-top: 50px;
+}
+
+.Efecto_Parallax div p {
+    width: 30%;
+    font-size: 1.2vw;
+    /* background-color: rgb(0, 0, 0, 0.5);*/
+}
+
+
+/*--------------------------------------------------*/
+ #gallerywrapper {
+     width:640px;
+     height:450px;
+     margin:0 auto;
+     position:relative;
+     font-family:verdana, arial, sans-serif;
+ } 
+
+ #gallerywrapper #gallery {
+     position:absolute;
+     left:0;
+     top:0;
+     height:450px;
+     width:640px;
+     overflow:hidden;
+     text-align:center;
+ } 
+
+ #gallerywrapper #gallery div {
+     width:640px; height:900px; 
+     padding-top:10px; 
+     position:relative;
+ } 
+
+ #gallerywrapper #gallery div img {
+     clear:both; 
+     display:block; 
+     margin:0 auto; 
+     border:0;
+ } 
+
+ #gallerywrapper #gallery div h3 {
+     padding:10px 0 0 0; 
+     margin:0; 
+     font-size:18px;
+ } 
+
+ #gallerywrapper #gallery div p {
+     padding:5px 0; 
+     margin:0; 
+     font-size:12px; 
+     line-height:18px;
+ } 
+
+ #gallery .previous{ 
+     display:inline;
+     float:left;
+     margin-left:80px;
+     text-decoration:none;
+ } 
+
+ #gallery .next{ 
+     display:inline;
+     float:right;
+     margin-right:80px;
+     text-decoration:none;
+ }
+
 </style>
