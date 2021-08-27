@@ -7,8 +7,8 @@
                     <b-card no-body style="max-width: 18rem;" id="Card-Info" :img-src="user.url"  img-alt="Image" img-top>
                         <br> <br>
                             <h6 class="mb-0"><strong>{{ user.title }}</strong></h6>
-                        <b-card-body>
-                            {{ user.body }}
+                        <b-card-body class="body-text">
+                            <p>{{ user.body }}</p>
                         </b-card-body>
                         <b-card-body>
                             <a href="#" class="card-link">{{ user.link_1 }}</a> <br> <br>
@@ -20,17 +20,17 @@
              </b-row>
         </b-container>
         <!-- Controles -->
-        <nav aria-label="Page navigation" class="text-center">
+        <nav aria-label="Page navigation" class="text-center" id="nav-next-prev">
             <br>
             <ul class="pagination text-center">
                 <li>
                     <a href="#" aria-label="Previous" v-show="pag != 1" @click.prevent="pag -= 1">
-                        <span aria-hidden="true">« Anterior</span>&nbsp;<span aria-hidden="true">Siguiente »</span>
+                        <span aria-hidden="true">« Anterior</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span aria-hidden="true">Siguiente »</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" aria-label="Next" v-show="pag * NUM_RESULTS / users.length < 1" @click.prevent="pag += 1">
-                        <span aria-hidden="true">« Anterior</span>&nbsp;<span aria-hidden="true">Siguiente »</span>
+                        <span aria-hidden="true">« Anterior</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span aria-hidden="true">Siguiente »</span>
                     </a>
                 </li>
             </ul>
@@ -104,7 +104,6 @@ export default {
 </script>
 <style>
 .list-group{
-    border:5px solid red; 
     display:flex;
     justify-content:center;
 }
@@ -113,7 +112,6 @@ export default {
     display:flex;
     justify-content:center;
     margin-left:40px;
-    border:5px solid black;
     width:28%;
     height:650px;
 }
@@ -122,12 +120,36 @@ export default {
     margin-top:25px;
     margin-bottom:25px;
     text-align:center;
-    border:5px solid gray;
      height:610px;
 }
 
 
+.body-text{
+    text-align:justify;
+}
 
+#nav-next-prev{
+    display:flex;
+    justify-content:center;
+}
 
+#nav-next-prev ul{
+    position:relative;
+    margin-top:25px;
+    text-align:center;
+    /*left:140%;*/
+    color:black;
+}
+
+#nav-next-prev ul li{
+    position:relative;
+    color:black;
+}
+
+#nav-next-prev ul li a{
+    color:black;
+    margin-left:25px;
+    text-decoration:none;
+}
 
 </style>
