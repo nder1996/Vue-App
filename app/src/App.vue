@@ -79,8 +79,9 @@
                 </div>
             </div>
         </div>
-   
+    <br>
         <Pagination_1></Pagination_1>
+        <br>
         <Footer></Footer>
     </div>
 </template>
